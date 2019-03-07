@@ -11,10 +11,15 @@ export class ConfirmDeactivatorService implements CanDeactivate<InfoComponent> {
 
     constructor(private router: Router) { }
 
-    canDeactivate(component: InfoComponent) {
+    canDeactivate(component: InfoComponent,
+                  currentRoute: ActivatedRouteSnapshot,
+                  currentState: RouterStateSnapshot,
+                  nextState?: RouterStateSnapshot) {
         console.log(component.isClicked);
         if (!component.isClicked) {
             return window.confirm('De knop "klik" moet gedrukt zijn voor je deze pagina kan verlaten.');
+        } else {
+            this.router.navigate(['']);
         }
     }
 }

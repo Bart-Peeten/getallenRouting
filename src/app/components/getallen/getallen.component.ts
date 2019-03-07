@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-getallen',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./getallen.component.css']
 })
 export class GetallenComponent implements OnInit {
+
+  @Input() getal: number;
 
   constructor() { }
 

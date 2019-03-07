@@ -27,6 +27,13 @@ li a:hover:not(.active) {
     background-color: #4CAF50;
 }
 
+li input{
+    width: 200px;
+    height:25px;
+    vertical-align: middle;
+    margin-top: 5px;
+}
+
 p{
     float: right;
     width: 150px;
