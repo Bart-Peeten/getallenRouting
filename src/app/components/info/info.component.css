@@ -1,0 +1,12 @@
+p{
+    width: 50%;
+}
+
+button{
+    width: 200px;
+    height: 40px;
+    background-color: yellow;
+    color: #111111;
+    border-color: #111111;
+    border-width: thick;
+}
